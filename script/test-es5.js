@@ -11,7 +11,7 @@ var mochaOption = " -t 10000 --recursive ./out/test/src -R spec";
 
 if (process.env.TRAVIS)
 {
-   sh.exec('./node_modules/.bin/isparta cover --report lcovonly --excludes "./node_modules/mocha/bin/_mocha" _mocha -- ' + mochaOption
+   sh.exec('./node_modules/.bin/isparta cover --excludes "./node_modules/mocha/bin/_mocha" ./node_modules/mocha/bin/_mocha --report lcovonly --' + mochaOption
     + ' && cat ./coverage/lcov.info | ./node_modules/codecov.io/bin/codecov.io.js');
 }
 else if(process.argv.indexOf('--coverage') !== -1)

@@ -7,9 +7,7 @@
 
 var sh = require('./sh');
 
-var mochaOption = " --recursive ./test/src -R spec";
-
-console.log('%% process.argv: ' +process.argv);
+var mochaOption = " ./test/src/*.js";
 
 if (process.env.TRAVIS)
 {
@@ -18,10 +16,10 @@ if (process.env.TRAVIS)
 }
 else if(process.argv.indexOf('--coverage') !== -1)
 {
-   sh.exec('babel-node ./node_modules/.bin/isparta cover --report lcovonly --excludes "./node_modules/mocha/bin/_mocha" --compilers js:babel-core/register _mocha -- ' + mochaOption);
+   sh.exec('babel-node ./node_modules/.bin/isparta cover --verbose --report lcovonly --excludes "./node_modules/mocha/bin/_mocha" --compilers js:babel-core/register _mocha -- ' + mochaOption);
 }
 
 else
 {
-   sh.exec('babel-node ./node_modules/.bin/mocha --compilers js:babel-core/register' + mochaOption);
+   sh.exec('babel-node ./node_modules/.bin/mocha --compilers js:babel-core/register -- ' + mochaOption);
 }
