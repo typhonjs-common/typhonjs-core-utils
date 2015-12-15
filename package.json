@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "babel": "^6.3.13",
+    "babel-cli": "^6.3.17",
     "codecov.io": "^0.1.6",
     "fs-extra": "^0.26.2",
     "gulp": "^3.9.0",
