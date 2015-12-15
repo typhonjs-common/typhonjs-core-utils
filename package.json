@@ -1,0 +1,37 @@
+{
+  "name": "typhonjs-core-utils",
+  "version": "0.1.0",
+  "homepage": "https://github.com/typhonjs/typhonjs-core-utils",
+  "description": "Provides common utility functionality shared across TyphonJS.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/typhonjs/typhonjs-core-utils/"
+  },
+  "bugs": {
+    "url": "https://github.com/typhonjs/typhonjs-core-utils/issues"
+  },
+  "jspm": {
+    "main": false,
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.33",
+      "babel-runtime": "npm:babel-runtime@^5.8.29",
+      "core-js": "npm:core-js@^1.2.6"
+    }
+  },
+  "devDependencies": {
+    "babel": "^5.8.34",
+    "codecov.io": "^0.1.6",
+    "espower-babel": "^3.3.0",
+    "fs-extra": "^0.26.0",
+    "gulp": "^3.9.0",
+    "istanbul": "^0.4.0",
+    "mocha": "^2.3.3",
+    "power-assert": "^1.1.0",
+    "typhonjs-config-eslint": "^0.2.0",
+    "typhonjs-core-gulptasks": "^0.3.0"
+  },
+  "scripts": {
+    "test": "node ./script/test.js"
+  }
+}

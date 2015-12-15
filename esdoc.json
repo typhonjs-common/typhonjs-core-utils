@@ -1,0 +1,9 @@
+{
+   "title": "typhonjs-core-utils",
+   "source": "src",
+   "destination": "docs",
+   "manual":
+   {
+      "changelog": ["./CHANGELOG.md"]
+   }
+}
