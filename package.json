@@ -22,16 +22,17 @@
   "devDependencies": {
     "babel": "^5.8.34",
     "codecov.io": "^0.1.6",
-    "espower-babel": "^3.3.0",
-    "fs-extra": "^0.26.0",
+    "fs-extra": "^0.26.2",
     "gulp": "^3.9.0",
-    "istanbul": "^0.4.0",
-    "mocha": "^2.3.3",
-    "power-assert": "^1.1.0",
+    "isparta": "^4.0.0",
+    "mocha": "^2.3.4",
+    "power-assert": "^1.2.0",
     "typhonjs-config-eslint": "^0.2.0",
     "typhonjs-core-gulptasks": "^0.3.0"
   },
   "scripts": {
-    "test": "node ./script/test.js"
+    "build": "node ./script/build.js",
+    "test": "node ./script/test.js",
+    "test-es5": "node ./script/test-es5.js"
   }
 }

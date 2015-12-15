@@ -5,4 +5,5 @@ before_script:
   - npm install -g gulp
 script:
   - gulp eslint
-  - TRAVIS=1 npm run test
+  - npm run build
+  - TRAVIS=1 npm run test-es5

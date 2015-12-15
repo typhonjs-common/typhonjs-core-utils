@@ -7,18 +7,21 @@
 
 var sh = require('./sh');
 
-var mochaOption = " -t 10000 --require ./node_modules/babel/register.js --require ./test/espower-babel-loader.js --recursive ./test/src -R spec";
+var mochaOption = " --recursive ./test/src -R spec";
+
+console.log('%% process.argv: ' +process.argv);
 
 if (process.env.TRAVIS)
 {
-   sh.exec('./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- ' + mochaOption
+   sh.exec('babel-node ./node_modules/.bin/isparta cover --report lcovonly --excludes "./node_modules/mocha/bin/_mocha" --compilers js:babel-core/register _mocha -- ' + mochaOption
     + ' && cat ./coverage/lcov.info | ./node_modules/codecov.io/bin/codecov.io.js');
 }
 else if(process.argv.indexOf('--coverage') !== -1)
 {
-   sh.exec('./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha  -- ' + mochaOption);
+   sh.exec('babel-node ./node_modules/.bin/isparta cover --report lcovonly --excludes "./node_modules/mocha/bin/_mocha" --compilers js:babel-core/register _mocha -- ' + mochaOption);
 }
+
 else
 {
-   sh.exec('./node_modules/.bin/mocha' + mochaOption);
+   sh.exec('babel-node ./node_modules/.bin/mocha --compilers js:babel-core/register' + mochaOption);
 }

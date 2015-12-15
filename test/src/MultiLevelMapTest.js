@@ -72,6 +72,21 @@ describe('MultiLevelMap Test', () =>
       assert(map.has('key1A', 'key2A') === false);
    });
 
+   it('map set / delete / has', () =>
+   {
+      const map = new MultiLevelMap();
+
+      map.set('key1', 1);
+      assert(map.has('key1'));
+      map.delete('key1');
+      assert(!map.has('key1'));
+
+      map.set('key1A', 'key2A', 2);
+      assert(map.has('key1A', 'key2A'));
+      map.delete('key1A', 'key2A');
+      assert(!map.has('key1A', 'key2A'));
+   });
+
    it('map set / entries', () =>
    {
       const map = new MultiLevelMap();
