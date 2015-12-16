@@ -7,11 +7,11 @@
  *
  * Errors will be thrown for methods that require a minimum number of keys including:
  * `delete(1), get(1), has(1), set(2)`. In particular set requires the actual value being set in addition to any
- * number of keys. Another caveat of set is that if at any level of indexed keys if a value is already set for the
+ * number of keys. Another caveat of `set()` is that if at any level of indexed keys a value is already set for the
  * given key index an Error will be thrown due to the pre-existing value not being a Map.
  *
  * @example
- * const map = new MultiLevelMap();
+ * const map = new MultiMap();
  *
  * map.set('key1', 'key2', 1);  // creates a 2nd level Map indexed by 'key1' with value '1' indexed by 'key2'.
  * map.get('key1'); // returns the 2nd level Map.
@@ -20,7 +20,7 @@
  *
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map
  */
-export default class MultiLevelMap
+export default class MultiMap
 {
    /**
     * Initializes the MultiLevelMap

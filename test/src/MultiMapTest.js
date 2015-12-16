@@ -1,40 +1,40 @@
 import assert from 'power-assert';
 
-import MultiLevelMap from '../../src/MultiLevelMap.js';
+import MultiMap from '../../src/MultiMap.js';
 
 /* eslint-disable no-undef */
 
 /**
- * These tests confirm the API of MultiLevelMap.
+ * These tests confirm the API of MultiMap.
  *
- * @test {MultiLevelMap}
+ * @test {MultiMap}
  */
-describe('MultiLevelMap Test', () =>
+describe('MultiMap Test', () =>
 {
    it('map delete (invalid)', () =>
    {
-      const map = new MultiLevelMap();
+      const map = new MultiMap();
 
       assert.throws(() => { map.delete(); }, Error);
    });
 
    it('map get (invalid)', () =>
    {
-      const map = new MultiLevelMap();
+      const map = new MultiMap();
 
       assert.throws(() => { map.get(); }, Error);
    });
 
    it('map has (invalid)', () =>
    {
-      const map = new MultiLevelMap();
+      const map = new MultiMap();
 
       assert.throws(() => { map.has(); }, Error);
    });
 
    it('map set (invalid)', () =>
    {
-      const map = new MultiLevelMap();
+      const map = new MultiMap();
 
       assert.throws(() => { map.set(); }, Error);
       assert.throws(() => { map.set('key1'); }, Error);
@@ -48,7 +48,7 @@ describe('MultiLevelMap Test', () =>
 
    it('map set / clear / has', () =>
    {
-      const map = new MultiLevelMap();
+      const map = new MultiMap();
 
       map.set('key1', 1);
       map.clear();
@@ -74,7 +74,7 @@ describe('MultiLevelMap Test', () =>
 
    it('map set / delete / has', () =>
    {
-      const map = new MultiLevelMap();
+      const map = new MultiMap();
 
       map.set('key1', 1);
       assert(map.has('key1'));
@@ -89,7 +89,7 @@ describe('MultiLevelMap Test', () =>
 
    it('map set / entries', () =>
    {
-      const map = new MultiLevelMap();
+      const map = new MultiMap();
 
       assert(map.entries().next().value === undefined);
       assert(map.entries().next().done === true);
@@ -130,7 +130,7 @@ describe('MultiLevelMap Test', () =>
 
    it('map set / get', () =>
    {
-      const map = new MultiLevelMap();
+      const map = new MultiMap();
 
       assert(map.set('key1', 1) instanceof Map);
       assert(map.set('key1A', 'key2A', 2) instanceof Map);
@@ -152,7 +152,7 @@ describe('MultiLevelMap Test', () =>
 
    it('map set / has', () =>
    {
-      const map = new MultiLevelMap();
+      const map = new MultiMap();
 
       map.set('key1', 1);
       map.set('key1A', 'key2A', 2);
@@ -168,7 +168,7 @@ describe('MultiLevelMap Test', () =>
 
    it('map set / isMap', () =>
    {
-      const map = new MultiLevelMap();
+      const map = new MultiMap();
 
       assert(map.isMap());
 
@@ -189,7 +189,7 @@ describe('MultiLevelMap Test', () =>
 
    it('map set / keys', () =>
    {
-      const map = new MultiLevelMap();
+      const map = new MultiMap();
 
       assert(map.keys().next().value === undefined);
       assert(map.keys().next().done === true);
@@ -215,7 +215,7 @@ describe('MultiLevelMap Test', () =>
 
    it('map set / size', () =>
    {
-      const map = new MultiLevelMap();
+      const map = new MultiMap();
 
       assert(map.size() === 0);
       assert(map.size('key1') === 0);
@@ -240,7 +240,7 @@ describe('MultiLevelMap Test', () =>
 
    it('map set / values', () =>
    {
-      const map = new MultiLevelMap();
+      const map = new MultiMap();
 
       assert(map.values().next().value === undefined);
       assert(map.values().next().done === true);
