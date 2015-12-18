@@ -1,8 +1,8 @@
 window.esdocSearchIndex = [
   [
-    "typhonjs-core-utils/src/multilevelmap.js~multilevelmap",
-    "class/src/MultiLevelMap.js~MultiLevelMap.html",
-    "<span>MultiLevelMap</span> <span class=\"search-result-import-path\">typhonjs-core-utils/src/MultiLevelMap.js</span>",
+    "typhonjs-core-utils/src/multimap.js~multimap",
+    "class/src/MultiMap.js~MultiMap.html",
+    "<span>MultiMap</span> <span class=\"search-result-import-path\">typhonjs-core-utils/src/MultiMap.js</span>",
     "class"
   ],
   [
@@ -10,6 +10,12 @@ window.esdocSearchIndex = [
     "class/src/Utils.js~Utils.html",
     "<span>Utils</span> <span class=\"search-result-import-path\">typhonjs-core-utils/src/Utils.js</span>",
     "class"
+  ],
+  [
+    "typhonjs-core-utils/src/btoa.js~btoa",
+    "variable/index.html#static-variable-btoa",
+    "<span>btoa</span> <span class=\"search-result-import-path\">typhonjs-core-utils/src/btoa.js</span>",
+    "variable"
   ],
   [
     "builtinexternal/ecmascriptexternal.js~array",
@@ -342,75 +348,75 @@ window.esdocSearchIndex = [
     "external"
   ],
   [
-    "src/multilevelmap.js",
-    "file/src/MultiLevelMap.js.html",
-    "src/MultiLevelMap.js",
+    "src/multimap.js",
+    "file/src/MultiMap.js.html",
+    "src/MultiMap.js",
     "file"
   ],
   [
-    "src/multilevelmap.js~multilevelmap#clear",
-    "class/src/MultiLevelMap.js~MultiLevelMap.html#instance-method-clear",
-    "src/MultiLevelMap.js~MultiLevelMap#clear",
+    "src/multimap.js~multimap#clear",
+    "class/src/MultiMap.js~MultiMap.html#instance-method-clear",
+    "src/MultiMap.js~MultiMap#clear",
     "method"
   ],
   [
-    "src/multilevelmap.js~multilevelmap#constructor",
-    "class/src/MultiLevelMap.js~MultiLevelMap.html#instance-constructor-constructor",
-    "src/MultiLevelMap.js~MultiLevelMap#constructor",
+    "src/multimap.js~multimap#constructor",
+    "class/src/MultiMap.js~MultiMap.html#instance-constructor-constructor",
+    "src/MultiMap.js~MultiMap#constructor",
     "method"
   ],
   [
-    "src/multilevelmap.js~multilevelmap#delete",
-    "class/src/MultiLevelMap.js~MultiLevelMap.html#instance-method-delete",
-    "src/MultiLevelMap.js~MultiLevelMap#delete",
+    "src/multimap.js~multimap#delete",
+    "class/src/MultiMap.js~MultiMap.html#instance-method-delete",
+    "src/MultiMap.js~MultiMap#delete",
     "method"
   ],
   [
-    "src/multilevelmap.js~multilevelmap#entries",
-    "class/src/MultiLevelMap.js~MultiLevelMap.html#instance-method-entries",
-    "src/MultiLevelMap.js~MultiLevelMap#entries",
+    "src/multimap.js~multimap#entries",
+    "class/src/MultiMap.js~MultiMap.html#instance-method-entries",
+    "src/MultiMap.js~MultiMap#entries",
     "method"
   ],
   [
-    "src/multilevelmap.js~multilevelmap#get",
-    "class/src/MultiLevelMap.js~MultiLevelMap.html#instance-method-get",
-    "src/MultiLevelMap.js~MultiLevelMap#get",
+    "src/multimap.js~multimap#get",
+    "class/src/MultiMap.js~MultiMap.html#instance-method-get",
+    "src/MultiMap.js~MultiMap#get",
     "method"
   ],
   [
-    "src/multilevelmap.js~multilevelmap#has",
-    "class/src/MultiLevelMap.js~MultiLevelMap.html#instance-method-has",
-    "src/MultiLevelMap.js~MultiLevelMap#has",
+    "src/multimap.js~multimap#has",
+    "class/src/MultiMap.js~MultiMap.html#instance-method-has",
+    "src/MultiMap.js~MultiMap#has",
     "method"
   ],
   [
-    "src/multilevelmap.js~multilevelmap#ismap",
-    "class/src/MultiLevelMap.js~MultiLevelMap.html#instance-method-isMap",
-    "src/MultiLevelMap.js~MultiLevelMap#isMap",
+    "src/multimap.js~multimap#ismap",
+    "class/src/MultiMap.js~MultiMap.html#instance-method-isMap",
+    "src/MultiMap.js~MultiMap#isMap",
     "method"
   ],
   [
-    "src/multilevelmap.js~multilevelmap#keys",
-    "class/src/MultiLevelMap.js~MultiLevelMap.html#instance-method-keys",
-    "src/MultiLevelMap.js~MultiLevelMap#keys",
+    "src/multimap.js~multimap#keys",
+    "class/src/MultiMap.js~MultiMap.html#instance-method-keys",
+    "src/MultiMap.js~MultiMap#keys",
     "method"
   ],
   [
-    "src/multilevelmap.js~multilevelmap#set",
-    "class/src/MultiLevelMap.js~MultiLevelMap.html#instance-method-set",
-    "src/MultiLevelMap.js~MultiLevelMap#set",
+    "src/multimap.js~multimap#set",
+    "class/src/MultiMap.js~MultiMap.html#instance-method-set",
+    "src/MultiMap.js~MultiMap#set",
     "method"
   ],
   [
-    "src/multilevelmap.js~multilevelmap#size",
-    "class/src/MultiLevelMap.js~MultiLevelMap.html#instance-method-size",
-    "src/MultiLevelMap.js~MultiLevelMap#size",
+    "src/multimap.js~multimap#size",
+    "class/src/MultiMap.js~MultiMap.html#instance-method-size",
+    "src/MultiMap.js~MultiMap#size",
     "method"
   ],
   [
-    "src/multilevelmap.js~multilevelmap#values",
-    "class/src/MultiLevelMap.js~MultiLevelMap.html#instance-method-values",
-    "src/MultiLevelMap.js~MultiLevelMap#values",
+    "src/multimap.js~multimap#values",
+    "class/src/MultiMap.js~MultiMap.html#instance-method-values",
+    "src/MultiMap.js~MultiMap#values",
     "method"
   ],
   [
@@ -430,5 +436,11 @@ window.esdocSearchIndex = [
     "class/src/Utils.js~Utils.html#static-method-isTypeOf",
     "src/Utils.js~Utils.isTypeOf",
     "method"
+  ],
+  [
+    "src/btoa.js",
+    "file/src/btoa.js.html",
+    "src/btoa.js",
+    "file"
   ]
 ]
