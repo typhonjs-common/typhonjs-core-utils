@@ -8,3 +8,5 @@ if (fs.existsSync('./coverage'))
 {
    fs.removeSync('./coverage');
 }
+
+fs.mkdir('./coverage');

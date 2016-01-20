@@ -1,8 +1,8 @@
+import { assert } from 'chai';
+
+import Utils      from '../../src/Utils.js';
+
 /* eslint-disable no-undef */
-
-import assert from 'power-assert';
-
-import Utils from '../../src/Utils.js';
 
 class TestBase {}
 class Child1 extends TestBase {}

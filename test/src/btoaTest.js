@@ -1,8 +1,8 @@
+import { assert } from 'chai';
+
+import btoa       from '../../src/btoa.js';
+
 /* eslint-disable no-undef */
-
-import assert from 'power-assert';
-
-import btoa from '../../src/btoa.js';
 
 /**
  * This test confirms the btoa function defined in `btoa.js`.

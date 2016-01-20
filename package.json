@@ -20,20 +20,21 @@
     }
   },
   "devDependencies": {
-    "babel": "^5.8.34",
+    "babel-core": "^6.4.0",
+    "babel-cli": "^6.4.0",
+    "babel-preset-es2015": "^6.3.13",
+    "chai": "^3.4.1",
     "codecov.io": "^0.1.6",
     "fs-extra": "^0.26.2",
     "gulp": "^3.9.0",
-    "isparta": "^4.0.0",
-    "jspm": "^0.16.23",
+    "istanbul": "1.0.0-alpha.1",
+    "jspm": "^0.16.24",
     "mocha": "^2.3.4",
-    "power-assert": "^1.2.0",
     "typhonjs-config-eslint": "^0.2.1",
     "typhonjs-core-gulptasks": "^0.4.1"
   },
   "scripts": {
-    "build": "node ./script/build.js",
     "test": "node ./script/test.js",
-    "test-es5": "node ./script/test-es5.js"
+    "test-coverage": "node ./script/test.js --coverage"
   }
 }

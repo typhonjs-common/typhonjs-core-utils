@@ -1,6 +1,6 @@
-import assert from 'power-assert';
+import { assert } from 'chai';
 
-import MultiMap from '../../src/MultiMap.js';
+import MultiMap   from '../../src/MultiMap.js';
 
 /* eslint-disable no-undef */
 

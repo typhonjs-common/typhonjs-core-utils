@@ -11,15 +11,15 @@ var mochaOption = " ./test/src/*.js";
 
 if (process.env.TRAVIS)
 {
-   sh.exec('babel-node ./node_modules/.bin/isparta cover --report lcovonly --excludes "./node_modules/mocha/bin/_mocha" --compilers js:babel-core/register _mocha -- ' + mochaOption
+   // Presently Istanbul doesn't support JSPM tests.
+   sh.exec('babel-node ./node_modules/.bin/istanbul cover _mocha --report lcovonly -- --bail ' + mochaOption
     + ' && cat ./coverage/lcov.info | ./node_modules/codecov.io/bin/codecov.io.js');
 }
 else if(process.argv.indexOf('--coverage') !== -1)
 {
-   sh.exec('babel-node ./node_modules/.bin/isparta cover --verbose --report lcovonly --excludes "./node_modules/mocha/bin/_mocha" --compilers js:babel-core/register _mocha -- ' + mochaOption);
+   sh.exec('babel-node ./node_modules/.bin/istanbul cover _mocha --report lcovonly -- --bail ' + mochaOption);
 }
-
 else
 {
-   sh.exec('babel-node ./node_modules/.bin/mocha --compilers js:babel-core/register -- ' + mochaOption);
+   sh.exec('babel-node ./node_modules/.bin/_mocha -- ' + mochaOption);
 }
