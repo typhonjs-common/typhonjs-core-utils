@@ -348,6 +348,12 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/utils.js~utils.invokeorvalue",
+    "class/src/Utils.js~Utils.html#static-method-invokeOrValue",
+    "src/Utils.js~Utils.invokeOrValue",
+    "method"
+  ],
+  [
     "src/utils.js~utils.isnullorundef",
     "class/src/Utils.js~Utils.html#static-method-isNullOrUndef",
     "src/Utils.js~Utils.isNullOrUndef",
