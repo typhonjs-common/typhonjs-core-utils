@@ -11,11 +11,24 @@ class Child2 extends Child1 {}
 /**
  * This test confirms the utility functions defined in `Utils`.
  *
+ * @test {invokeOrValue}
  * @test {isNullOrUndef}
  * @test {isTypeOf}
  */
 describe('Utils Test', () =>
 {
+   it('invokeOrValue', () =>
+   {
+      const object =
+      {
+         testFunc: () => { return 'testFunc'; },
+         testValue: 'testValue'
+      };
+
+      assert(Utils.invokeOrValue(object, 'testFunc') === 'testFunc');
+      assert(Utils.invokeOrValue(object, 'testValue') === 'testValue');
+   });
+
    it('isNullOrUndef', () =>
    {
       const valueNull = null;

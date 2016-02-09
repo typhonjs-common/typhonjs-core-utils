@@ -1,8 +1,24 @@
+'use strict';
+
 /**
  * Provides static common utility methods.
  */
 export default class Utils
 {
+   /**
+    * Invokes the property as a function if it exists returning the result or just the property value.
+    *
+    * @param {object}   object - Object to inspect.
+    * @param {string}   property - Property value to return or function name to invoke and return.
+    * @returns {*}
+    */
+   static invokeOrValue(object, property)
+   {
+      if (typeof object !== 'object') { return void 0; }
+      const value = object[property];
+      return (typeof value === 'function') ? object[property]() : value;
+   }
+
    /**
     * Method for checking whether a variable is undefined or null.
     *
