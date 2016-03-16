@@ -1,8 +1,8 @@
 language: node_js
 node_js:
-  - "4.1"
+  - "5.8.0"
 before_script:
   - npm install -g gulp
 script:
   - gulp eslint
-  - TRAVIS=1 npm run test
+  - npm run test-coverage

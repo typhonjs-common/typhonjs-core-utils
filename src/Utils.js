@@ -14,8 +14,11 @@ export default class Utils
     */
    static invokeOrValue(object, property)
    {
+      /* istanbul ignore if */
       if (typeof object !== 'object') { return void 0; }
+
       const value = object[property];
+
       return (typeof value === 'function') ? object[property]() : value;
    }
 

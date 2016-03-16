@@ -17,13 +17,16 @@ const polyBtoa = (array) =>
       for (let j = 0; j < str.length; j++)
       {
          const ch = str.charCodeAt(j);
-         if (ch > 0xFF)
-         {
-            throw new Error('Not ascii. Base64.encode can only take ascii strings');
-         }
+
+         /* istanbul ignore if */
+         if (ch > 0xFF) { throw new Error('Not ascii. Base64.encode can only take ascii strings'); }
+
          array[j] = ch;
       }
    }
+
+   /* istanbul ignore if */
+   if (!Array.isArray(array)) { throw new TypeError(`polyBtoa error: 'array' is not an 'Array'.`); }
 
    const answer = [];
    let a = null;
@@ -104,9 +107,6 @@ const s_BTOA_GET_CHAR = (val) =>
 const s_BTOA_NEW_BINARY = (len) =>
 {
    const ret = [];
-   for (let i = 0; i < len; i++)
-   {
-      ret.push(0);
-   }
+   for (let i = 0; i < len; i++) { ret.push(0); }
    return ret;
 };
